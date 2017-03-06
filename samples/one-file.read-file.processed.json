@@ -1,0 +1,69 @@
+[
+  {
+    "name": "fs.readFile",
+    "steps": 4,
+    "rootId": 17,
+    "operation": {
+      "lifeCycle": {
+        "created": {
+          "ms": "44.12ms",
+          "ns": 44119000
+        },
+        "destroyed": {
+          "ms": "85.95ms",
+          "ns": 85955000
+        },
+        "timeAlive": {
+          "ms": "41.84ms",
+          "ns": 41836000
+        }
+      },
+      "createdAt": "at Test.<anonymous> (/Volumes/d/dev/js/async-hooks/ah-fs/test/read-one-file.js:36:6)",
+      "open": {
+        "id": 10,
+        "triggerId": 1
+      },
+      "stat": {
+        "id": 11,
+        "triggerId": 10
+      },
+      "read": {
+        "id": 12,
+        "triggerId": 11
+      },
+      "close": {
+        "id": 13,
+        "triggerId": 12
+      },
+      "userFunctions": [
+        {
+          "file": "/Volumes/d/dev/js/async-hooks/ah-fs/test/read-one-file.js",
+          "line": 39,
+          "column": 17,
+          "inferredName": "",
+          "name": "onread",
+          "location": "onread (/Volumes/d/dev/js/async-hooks/ah-fs/test/read-one-file.js:39:17)",
+          "args": {
+            "0": null,
+            "1": {
+              "type": "Buffer",
+              "len": 6108,
+              "included": 18,
+              "val": {
+                "utf8": "const test = requi",
+                "hex": "636f6e73742074657374203d207265717569"
+              }
+            },
+            "proto": "Object"
+          },
+          "propertyPaths": [
+            "open.resource.context.callback",
+            "stat.resource.context.callback",
+            "read.resource.context.callback",
+            "close.resource.context.callback"
+          ]
+        }
+      ]
+    }
+  }
+]
