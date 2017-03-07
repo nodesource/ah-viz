@@ -1,3 +1,7 @@
 body {
   background: #ddd;
 }
+
+.fs-readfile {
+  fill: orange;
+}
