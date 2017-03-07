@@ -2,6 +2,10 @@ body {
   background: #ddd;
 }
 
+.operation-rect {
+  cursor: pointer;
+}
+
 .fs-readfile {
   fill: orange;
 }
