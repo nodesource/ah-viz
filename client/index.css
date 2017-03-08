@@ -13,3 +13,14 @@ body {
 .label {
   font-weight: bold;
 }
+
+.code { 
+  white-space: pre;
+  background: #222;
+  color: yellowgreen;
+  padding: 5px;
+  border: solid silver;
+  border-radius: 5px;
+  font-family: courier;
+  font-size: 12px;
+}

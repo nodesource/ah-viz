@@ -21,6 +21,10 @@ document.body.appendChild(svg)
 const details = document.createElement('div')
 document.body.appendChild(details)
 
+const codeSnippet = document.createElement('div')
+document.body.appendChild(codeSnippet)
+codeSnippet.classList.add('code')
+
 const visualizer = new Visualizer({
     svg
   , width
@@ -33,4 +37,15 @@ visualizer.render(operations)
 
 function onoperationClicked({ operation, name }) {
   details.innerHTML = new Operation({ operation, name }).render()
+}
+
+const requestCode = require('../lib/request-code')
+
+const file = '/Volumes/d/dev/js/async-hooks/ah-fs/test/read-one-file.js'
+const line = 39
+requestCode({ file, line }, oncode)
+
+function oncode(err, code) {
+  if (err) return console.error(err)
+  codeSnippet.innerHTML = code
 }
