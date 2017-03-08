@@ -22,7 +22,7 @@ body {
   margin-top: 10px;
   border: solid silver;
   border-radius: 5px;
-  font-family: courier;
-  font-size: 12px;
+  font-family: Menlo, Courier New, Monospace;
+  font-size: 14px;
   width: 680px
 }
