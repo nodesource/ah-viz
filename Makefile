@@ -9,3 +9,6 @@ watch:
 
 watch-noreload:
 	$(BUDO) $(EXCLUDE_MODULES) $(ENTRY) $(CSS) -- -d
+
+start:
+	node server/app

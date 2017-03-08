@@ -21,8 +21,10 @@ function getCode(file, line, cb) {
     if (err) return cb(err)
     const lines = src.toString().split('\n')
     // include 2 lines above and below (lines are zero based)
-    const relevant = lines.slice(line - 1, line + 4)
-    const code = relevant.map((x, idx) => `${line + idx}: ${x}`).join('\n')
+    const startLine = line - 1 - 2
+    const endLine = startLine + 5
+    const relevant = lines.slice(startLine, endLine)
+    const code = relevant.map((x, idx) => `${startLine + idx + 1}: ${x}`).join('\n')
     cb(null, code)
   }
 }

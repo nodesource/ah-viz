@@ -19,8 +19,10 @@ body {
   background: #222;
   color: yellowgreen;
   padding: 5px;
+  margin-top: 10px;
   border: solid silver;
   border-radius: 5px;
   font-family: courier;
   font-size: 12px;
+  width: 680px
 }

@@ -1,5 +1,6 @@
 const data = require('../samples/one-file.read-file.processed.json')
 
+const requestCode = require('../lib/request-code')
 const mungeData = require('../lib/munge-data')
 const Operation = require('../lib/operation')
 const debugData = require('debug')('viz:data')
@@ -39,13 +40,16 @@ function onoperationClicked({ operation, name }) {
   details.innerHTML = new Operation({ operation, name }).render()
 }
 
-const requestCode = require('../lib/request-code')
+details.onclick = ondetailsClicked
+function ondetailsClicked(e) {
+  const link = e.target.tagName === 'A' ? e.target : e.target.parentElement
+  if (link.dataset == null || link.dataset.file == null) return
+  const { file, line } = link.dataset
 
-const file = '/Volumes/d/dev/js/async-hooks/ah-fs/test/read-one-file.js'
-const line = 39
-requestCode({ file, line }, oncode)
+  requestCode({ file, line }, oncode)
 
-function oncode(err, code) {
-  if (err) return console.error(err)
-  codeSnippet.innerHTML = code
+  function oncode(err, code) {
+    if (err) return console.error(err)
+    codeSnippet.innerHTML = code
+  }
 }
