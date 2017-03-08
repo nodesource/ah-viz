@@ -1,4 +1,4 @@
-const data = require('../samples/one-file.read-file.processed.json')
+const data = require('../samples/three-files.read-file.processed.json')
 
 const requestCode = require('../lib/request-code')
 const mungeData = require('../lib/munge-data')

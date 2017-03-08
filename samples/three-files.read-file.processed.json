@@ -1,0 +1,179 @@
+[
+  {
+    "name": "fs.readFile",
+    "steps": 4,
+    "rootId": 19,
+    "operation": {
+      "lifeCycle": {
+        "created": {
+          "ms": "33.05ms",
+          "ns": 33045000
+        },
+        "destroyed": {
+          "ms": "115.01ms",
+          "ns": 115008000
+        },
+        "timeAlive": {
+          "ms": "81.96ms",
+          "ns": 81963000
+        }
+      },
+      "createdAt": "at readFiles (/Volumes/d/dev/js/async-hooks/ah-fs/test/read-three-files.js:37:6)",
+      "open": {
+        "id": 10,
+        "triggerId": 1
+      },
+      "stat": {
+        "id": 13,
+        "triggerId": 10
+      },
+      "read": {
+        "id": 16,
+        "triggerId": 13
+      },
+      "close": {
+        "id": 19,
+        "triggerId": 16
+      },
+      "userFunctions": [
+        {
+          "file": "/Volumes/d/dev/js/async-hooks/ah-fs/test/read-three-files.js",
+          "line": 41,
+          "column": 21,
+          "inferredName": "",
+          "name": "onreadFile",
+          "location": "onreadFile (/Volumes/d/dev/js/async-hooks/ah-fs/test/read-three-files.js:41:21)",
+          "args": null,
+          "propertyPaths": [
+            "open.resource.context.callback",
+            "stat.resource.context.callback",
+            "read.resource.context.callback",
+            "close.resource.context.callback"
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "name": "fs.readFile",
+    "steps": 4,
+    "rootId": 20,
+    "operation": {
+      "lifeCycle": {
+        "created": {
+          "ms": "33.84ms",
+          "ns": 33843000
+        },
+        "destroyed": {
+          "ms": "115.06ms",
+          "ns": 115056000
+        },
+        "timeAlive": {
+          "ms": "81.21ms",
+          "ns": 81213000
+        }
+      },
+      "createdAt": "at readFiles (/Volumes/d/dev/js/async-hooks/ah-fs/test/read-three-files.js:38:6)",
+      "open": {
+        "id": 11,
+        "triggerId": 1
+      },
+      "stat": {
+        "id": 14,
+        "triggerId": 11
+      },
+      "read": {
+        "id": 17,
+        "triggerId": 14
+      },
+      "close": {
+        "id": 20,
+        "triggerId": 17
+      },
+      "userFunctions": [
+        {
+          "file": "/Volumes/d/dev/js/async-hooks/ah-fs/test/read-three-files.js",
+          "line": 41,
+          "column": 21,
+          "inferredName": "",
+          "name": "onreadFile",
+          "location": "onreadFile (/Volumes/d/dev/js/async-hooks/ah-fs/test/read-three-files.js:41:21)",
+          "args": null,
+          "propertyPaths": [
+            "open.resource.context.callback",
+            "stat.resource.context.callback",
+            "read.resource.context.callback",
+            "close.resource.context.callback"
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "name": "fs.readFile",
+    "steps": 4,
+    "rootId": 21,
+    "operation": {
+      "lifeCycle": {
+        "created": {
+          "ms": "34.13ms",
+          "ns": 34133000
+        },
+        "destroyed": {
+          "ms": "115.09ms",
+          "ns": 115093000
+        },
+        "timeAlive": {
+          "ms": "80.96ms",
+          "ns": 80960000
+        }
+      },
+      "createdAt": "at readFiles (/Volumes/d/dev/js/async-hooks/ah-fs/test/read-three-files.js:39:6)",
+      "open": {
+        "id": 12,
+        "triggerId": 1
+      },
+      "stat": {
+        "id": 15,
+        "triggerId": 12
+      },
+      "read": {
+        "id": 18,
+        "triggerId": 15
+      },
+      "close": {
+        "id": 21,
+        "triggerId": 18
+      },
+      "userFunctions": [
+        {
+          "file": "/Volumes/d/dev/js/async-hooks/ah-fs/test/read-three-files.js",
+          "line": 41,
+          "column": 21,
+          "inferredName": "",
+          "name": "onreadFile",
+          "location": "onreadFile (/Volumes/d/dev/js/async-hooks/ah-fs/test/read-three-files.js:41:21)",
+          "args": {
+            "0": null,
+            "1": {
+              "type": "Buffer",
+              "len": 1845,
+              "included": 18,
+              "val": {
+                "utf8": "const test = requi",
+                "hex": "636f6e73742074657374203d207265717569"
+              }
+            },
+            "proto": "Object"
+          },
+          "propertyPaths": [
+            "open.resource.context.callback",
+            "stat.resource.context.callback",
+            "read.resource.context.callback",
+            "close.resource.context.callback"
+          ]
+        }
+      ]
+    }
+  }
+]

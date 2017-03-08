@@ -24,7 +24,10 @@ function getCode(file, line, cb) {
     const startLine = line - 1 - 2
     const endLine = startLine + 5
     const relevant = lines.slice(startLine, endLine)
-    const code = relevant.map((x, idx) => `${startLine + idx + 1}: ${x}`).join('\n')
+    const code = relevant.map((x, idx) => {
+      const pointer = startLine + idx + 1 === line ? '→' : ' '
+      return `${pointer} ${startLine + idx + 1}: ${x}`
+    }).join('\n')
     cb(null, code)
   }
 }
