@@ -1,5 +1,5 @@
 body {
-  background: #ddd;
+  background: antiquewhite;
 }
 
 .operation-rect {
@@ -8,6 +8,14 @@ body {
 
 .fs-readfile {
   fill: orange;
+}
+
+.tcp-server-connection {
+  fill: lightblue;
+}
+
+.tcp-server-listen {
+  fill: blue;
 }
 
 .label {

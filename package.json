@@ -2,7 +2,7 @@
   "name": "ah-viz",
   "version": "0.0.0",
   "description": "Visualizes ah-*.processor data.",
-  "main": "ah-viz.js",
+  "main": "client/client.js",
   "scripts": {},
   "repository": {
     "type": "git",
