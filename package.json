@@ -29,7 +29,8 @@
     "debug": "~2.6.1",
     "mousetrap": "~1.6.0",
     "raphael": "~2.2.7",
-    "tableify": "~1.1.0"
+    "tableify": "~1.1.0",
+    "traverse": "~0.6.6"
   },
   "devDependencies": {
     "bubleify": "~0.7.0",
