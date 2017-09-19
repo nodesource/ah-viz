@@ -34,3 +34,55 @@ body {
   font-size: 14px;
   width: 680px
 }
+
+.operation-details-table {
+  max-width: 850px;
+  max-height: 600px;
+  overflow: scroll;
+}
+
+/* tableify */
+table {
+  font-size: 12px;
+  border: silver 1px solid;
+  border-collapse : collapse;
+}
+
+td, th {
+  text-align : left;
+  vertical-align : top;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  padding-left : 4px;
+  padding-right : 4px;
+}
+
+th {
+  font-weight: bold;
+  color: darkgreen;
+  border-bottom: silver 1px solid;
+}
+
+th:after {
+  content: ':';
+}
+
+td.number {
+  color : blue
+}
+
+td.boolean {
+  color : green;
+  font-style : italic;
+}
+
+td.date {
+  color : purple;
+}
+
+td.null:after {
+  color : gray;
+  font-style : italic;
+  content : null;
+}

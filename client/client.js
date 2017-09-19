@@ -1,4 +1,4 @@
-const data = require('../samples/tcp-fs.operations.json')
+const data = require('../samples/operations.json')
 
 const requestCode = require('../lib/request-code')
 const mungeData = require('../lib/munge-data')
@@ -19,12 +19,13 @@ const ratioX = width / lifetime
 const ratioY = 1
 const svg = document.createElement('svg')
 document.body.appendChild(svg)
-const details = document.createElement('div')
-document.body.appendChild(details)
 
 const codeSnippet = document.createElement('div')
 document.body.appendChild(codeSnippet)
 codeSnippet.classList.add('code')
+
+const details = document.createElement('div')
+document.body.appendChild(details)
 
 const visualizer = new Visualizer({
     svg
