@@ -18,6 +18,10 @@ body {
   fill: blue;
 }
 
+.http-client-connection {
+  fill: #d0e5ec;
+}
+
 .label {
   font-weight: bold;
 }

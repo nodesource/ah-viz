@@ -19,6 +19,7 @@ const ratioX = width / lifetime
 const ratioY = 1
 const svg = document.createElement('svg')
 document.body.appendChild(svg)
+svg.classList.add('visual')
 
 const codeSnippet = document.createElement('div')
 document.body.appendChild(codeSnippet)
